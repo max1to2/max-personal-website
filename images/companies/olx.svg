@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="OLX logo">
+  <rect width="120" height="120" rx="20" fill="#5a2ca0"/>
+  <circle cx="60" cy="60" r="46" fill="#fff"/>
+  <text x="38" y="70" font-family="Arial, sans-serif" font-size="32" fill="#5a2ca0" font-weight="bold">OL</text>
+  <text x="68" y="70" font-family="Arial, sans-serif" font-size="32" fill="#5a2ca0" font-weight="bold">X</text>
+</svg>

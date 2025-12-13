@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Despegar.com logo">
+  <rect width="120" height="120" rx="20" fill="#331a62"/>
+  <path d="M26 78c20-6 36-18 52-34l16 6-6 16c-16 16-28 32-34 52l-10-4 4-12-12 4z" fill="#ff4f6d" opacity="0.9"/>
+  <text x="50%" y="34" font-family="Arial, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="bold">despegar.com</text>
+</svg>

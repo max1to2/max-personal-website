@@ -7,14 +7,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-// Breakpoints.
-
 	@include breakpoints((
 		wide:      ( 961px,  1880px ),
 		normal:    ( 961px,  1620px ),
@@ -22,9 +14,6 @@
 		narrower:  ( 737px,  960px  ),
 		mobile:    ( null,   736px  ),
 	));
-
-// Reset.
-// Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
 
 	html, body, div, span, applet, object,
 	iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -93,11 +82,6 @@
 		-ms-appearance: none;
 		appearance: none;
 	}
-
-/* Basic */
-
-	// Set box model to border-box.
-	// Based on css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
 		html {
 			box-sizing: border-box;
 		}
@@ -113,8 +97,6 @@
 		font-weight: 300;
 		line-height: 1.75em;
 		color: #888;
-
-		// Stops initial animations until page loads.
 			&.is-preload {
 				*, *:before, *:after {
 					@include vendor('animation', 'none !important');
@@ -229,8 +211,6 @@
 		clear: both;
 	}
 
-/* Container */
-
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
@@ -257,8 +237,6 @@
 		}
 	}
 
-/* Row */
-
 	.row {
 		@include html-grid((40px, 40px));
 
@@ -283,8 +261,6 @@
 		}
 	}
 
-/* Sections/Article */
-
 	section, article {
 		margin-bottom: 3em;
 
@@ -298,8 +274,6 @@
 			margin-bottom: 0;
 		}
 	}
-
-/* Image */
 
 	.image {
 		display: inline-block;
@@ -348,8 +322,6 @@
 		}
 	}
 
-/* List */
-
 	ul {
 		list-style: disc;
 		padding-left: 1em;
@@ -367,8 +339,6 @@
 			padding-left: 0.25em;
 		}
 	}
-
-/* Icons */
 
 	ul.icons {
 		cursor: default;
@@ -389,8 +359,6 @@
 			border: 0;
 		}
 	}
-
-/* Form */
 
 	form {
 		label {
@@ -456,8 +424,6 @@
 		}
 	}
 
-/* Table */
-
 	table {
 		width: 100%;
 		text-align: left;
@@ -491,8 +457,6 @@
 		}
 	}
 
-/* Button */
-
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -519,8 +483,6 @@
 		}
 	}
 
-/* Item */
-
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
@@ -536,8 +498,6 @@
 			}
 		}
 	}
-
-/* Icons */
 
 	.icon {
 		@include icon;
@@ -563,8 +523,6 @@
 			}
 		}
 	}
-
-/* Header */
 
 	#header {
 		@include vendor('display', 'flex');
@@ -686,8 +644,6 @@
 		}
 	}
 
-/* Footer */
-
 	#footer {
 		margin-left: 375px;
 		text-align: center;
@@ -715,8 +671,6 @@
 			}
 		}
 	}
-
-/* Main */
 
 	#main {
 		margin-left: 375px;
@@ -758,10 +712,10 @@
 				background-position: center center;
 			}
 
-			&.one {
-				background-color: #81918E;
-				background-image: url('../../images/banner.jpg');
-			}
+                        &.one {
+                                background-color: #81918E;
+                                background-image: url('../../images/banner.jpg');
+                        }
 
 			&.two {
 				background-color: #f5fafa;
@@ -777,29 +731,27 @@
 		}
 	}
 
-/* Wide */
-
 	@include breakpoint('wide') {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 17pt;
 			}
 
-		/* Header */
+		
 
 			#header {
 				width: 300px;
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 300px;
 			}
 
-		/* Main */
+		
 
 			#main {
 				margin-left: 300px;
@@ -807,11 +759,9 @@
 
 	}
 
-/* Normal */
-
 	@include breakpoint('normal') {
 
-		/* Main */
+		
 
 			#main {
 				> section {
@@ -827,11 +777,9 @@
 
 	}
 
-/* Narrow */
-
 	@include breakpoint('narrow') {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 16pt;
@@ -841,7 +789,7 @@
 				padding: 0 2em 0 2em;
 			}
 
-		/* Icons */
+		
 
 			ul.icons {
 				li {
@@ -851,13 +799,13 @@
 				}
 			}
 
-		/* Item */
+		
 
 			.item {
 				margin-bottom: 20px;
 			}
 
-		/* Header */
+		
 
 			#header {
 				width: 20%;
@@ -892,13 +840,13 @@
 				}
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 20%;
 			}
 
-		/* Main */
+		
 
 			#main {
 				margin-left: 20%;
@@ -906,15 +854,13 @@
 
 	}
 
-/* Narrower */
-
 	#headerToggle {
 		display: none;
 	}
 
 	@include breakpoint('<=narrower') {
 
-		/* Basic */
+		
 
 			html, body {
 				overflow-x: hidden;
@@ -934,13 +880,13 @@
 				padding: 0 2em 0 2em;
 			}
 
-		/* Item */
+		
 
 			.item {
 				margin-bottom: 15px;
 			}
 
-		/* Icons */
+		
 
 			ul.icons {
 				a {
@@ -949,7 +895,7 @@
 				}
 			}
 
-		/* Header */
+		
 
 			#header {
 				@include vendor('backface-visibility', 'hidden');
@@ -1051,13 +997,13 @@
 				}
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 0;
 			}
 
-		/* Main */
+		
 
 			#main {
 				@include vendor('backface-visibility', 'hidden');
@@ -1077,11 +1023,9 @@
 			}
 	}
 
-/* Mobile */
-
 	@include breakpoint('<=mobile') {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 14pt;
@@ -1097,7 +1041,7 @@
 				padding: 0 15px 0 15px;
 			}
 
-		/* List */
+		
 
 			ul.icons {
 				a {
@@ -1106,7 +1050,7 @@
 				}
 			}
 
-		/* Main */
+		
 
 			#main {
 				> section {
@@ -1124,7 +1068,7 @@
 				}
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				.copyright {

@@ -1,7 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -67,24 +66,23 @@ input, select, textarea {
 	appearance: none;
 }
 
-/* Basic */
-
-	html {
-		box-sizing: border-box;
-	}
+html {
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+        }
 
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
 
-	body {
-		background: #fff;
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 19pt;
-		font-weight: 300;
-		line-height: 1.75em;
-		color: #888;
-	}
+        body {
+                background: #fff;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 19pt;
+                font-weight: 300;
+                line-height: 1.75em;
+                color: #6d6d6d;
+        }
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -105,11 +103,11 @@ input, select, textarea {
 		color: #888;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
-		color: #666;
-		line-height: 1.5em;
-	}
+        h1, h2, h3, h4, h5, h6 {
+                font-weight: 300;
+                color: #515151;
+                line-height: 1.5em;
+        }
 
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
@@ -149,10 +147,10 @@ input, select, textarea {
 		margin: 2em 0 0 0;
 	}
 
-	strong, b {
-		font-weight: 300;
-		color: #666;
-	}
+        strong, b {
+                font-weight: 300;
+                color: #515151;
+        }
 
 	em, i {
 		font-style: italic;
@@ -205,12 +203,13 @@ input, select, textarea {
 		clear: both;
 	}
 
-/* Container */
-
 	.container {
 		margin: 0 auto;
 		max-width: 100%;
 		width: 1400px;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		box-sizing: border-box;
 	}
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
@@ -252,8 +251,6 @@ input, select, textarea {
 			}
 
 		}
-
-/* Row */
 
 	.row {
 		display: flex;
@@ -1721,8 +1718,6 @@ input, select, textarea {
 
 		}
 
-/* Sections/Article */
-
 	section, article {
 		margin-bottom: 3em;
 	}
@@ -1736,8 +1731,6 @@ input, select, textarea {
 		.row > section, .row > article {
 			margin-bottom: 0;
 		}
-
-/* Image */
 
 	.image {
 		display: inline-block;
@@ -1786,8 +1779,6 @@ input, select, textarea {
 				width: auto;
 			}
 
-/* List */
-
 	ul {
 		list-style: disc;
 		padding-left: 1em;
@@ -1805,8 +1796,6 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 		}
-
-/* Icons */
 
 	ul.icons {
 		cursor: default;
@@ -1827,8 +1816,6 @@ input, select, textarea {
 			text-align: center;
 			border: 0;
 		}
-
-/* Form */
 
 	form label {
 		display: block;
@@ -1899,8 +1886,6 @@ input, select, textarea {
 		border: 0;
 	}
 
-/* Table */
-
 	table {
 		width: 100%;
 		text-align: left;
@@ -1929,8 +1914,6 @@ input, select, textarea {
 		table tfoot {
 			background: #eee;
 		}
-
-/* Button */
 
 	input[type="button"],
 	input[type="submit"],
@@ -1972,8 +1955,6 @@ input, select, textarea {
 			background-color: #7eaeac;
 		}
 
-/* Item */
-
 	.item {
 		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
 		margin-bottom: 40px;
@@ -1989,8 +1970,6 @@ input, select, textarea {
 			.item header h3 {
 				font-size: 1em;
 			}
-
-/* Icons */
 
 	.icon {
 		text-decoration: none;
@@ -2025,8 +2004,6 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
-
-/* Header */
 
 	#header {
 		display: -moz-flex;
@@ -2167,8 +2144,6 @@ input, select, textarea {
 						color: #e27689;
 					}
 
-/* Footer */
-
 	#footer {
 		margin-left: 375px;
 		text-align: center;
@@ -2196,8 +2171,6 @@ input, select, textarea {
 					padding-left: 0;
 					margin-left: 0;
 				}
-
-/* Main */
 
 	#main {
 		margin-left: 375px;
@@ -2243,7 +2216,7 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+                        background-image: url("../../images/banner.jpg");
 			}
 
 			#main > section.two {
@@ -2258,29 +2231,27 @@ input, select, textarea {
 				background-color: #e8edec;
 			}
 
-/* Wide */
-
 	@media screen and (min-width: 961px) and (max-width: 1880px) {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 17pt;
 			}
 
-		/* Header */
+		
 
 			#header {
 				width: 300px;
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 300px;
 			}
 
-		/* Main */
+		
 
 			#main {
 				margin-left: 300px;
@@ -2288,11 +2259,9 @@ input, select, textarea {
 
 	}
 
-/* Normal */
-
 	@media screen and (min-width: 961px) and (max-width: 1620px) {
 
-		/* Main */
+		
 
 			#main > section {
 				padding: 3em 0;
@@ -2304,11 +2273,9 @@ input, select, textarea {
 
 	}
 
-/* Narrow */
-
 	@media screen and (min-width: 961px) and (max-width: 1320px) {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 16pt;
@@ -2318,19 +2285,19 @@ input, select, textarea {
 				padding: 0 2em 0 2em;
 			}
 
-		/* Icons */
+		
 
 			ul.icons li a {
 				width: 1.75em;
 			}
 
-		/* Item */
+		
 
 			.item {
 				margin-bottom: 20px;
 			}
 
-		/* Header */
+		
 
 			#header {
 				width: 20%;
@@ -2357,13 +2324,13 @@ input, select, textarea {
 						line-height: 2.25em;
 					}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 20%;
 			}
 
-		/* Main */
+		
 
 			#main {
 				margin-left: 20%;
@@ -2371,15 +2338,13 @@ input, select, textarea {
 
 	}
 
-/* Narrower */
-
 	#headerToggle {
 		display: none;
 	}
 
 	@media screen and (max-width: 960px) {
 
-		/* Basic */
+		
 
 			html, body {
 				overflow-x: hidden;
@@ -2397,20 +2362,20 @@ input, select, textarea {
 				padding: 0 2em 0 2em;
 			}
 
-		/* Item */
+		
 
 			.item {
 				margin-bottom: 15px;
 			}
 
-		/* Icons */
+		
 
 			ul.icons a {
 				width: 1.75em;
 				font-size: 1.25em;
 			}
 
-		/* Header */
+		
 
 			#header {
 				-moz-backface-visibility: hidden;
@@ -2539,13 +2504,13 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
-		/* Footer */
+		
 
 			#footer {
 				margin-left: 0;
 			}
 
-		/* Main */
+		
 
 			#main {
 				-moz-backface-visibility: hidden;
@@ -2569,8 +2534,6 @@ input, select, textarea {
 				}
 
         }
-
-/* Custom layout and typography */
 
 #about .container,
 #resume .container,
@@ -2815,7 +2778,7 @@ color: #e6e6e6;
         text-transform: uppercase;
         font-weight: 700;
         font-size: 1em;
-        color: #666;
+        color: #515151;
         margin-top: 15px;
         border-bottom: 2px solid red;
         display: inline-block;
@@ -2860,6 +2823,10 @@ color: #e6e6e6;
 }
 
 .companies-section {
+        background-color: #ffffff;
+}
+
+#main > section.companies-section {
         background-color: #ffffff;
 }
 
@@ -2942,6 +2909,10 @@ color: #e6e6e6;
                 flex: 0 0 auto;
         }
 
+        #resume .content header {
+                margin: 0 0 1.4em 0;
+        }
+
         .experience-details {
                 margin-left: 0;
         }
@@ -2950,8 +2921,6 @@ color: #e6e6e6;
                 margin-left: 0;
         }
 }
-
-/* Thank you page */
 
 .thank-you-body {
         background: #050505;
@@ -3029,11 +2998,9 @@ color: #e6e6e6;
         color: inherit;
 }
 
-/* Mobile */
-
 	@media screen and (max-width: 736px) {
 
-		/* Basic */
+		
 
 			body, input, textarea, select {
 				font-size: 14pt;
@@ -3049,14 +3016,14 @@ color: #e6e6e6;
 				padding: 0 15px 0 15px;
 			}
 
-		/* List */
+		
 
 			ul.icons a {
 				width: 2em;
 				font-size: 1.25em;
 			}
 
-		/* Main */
+		
 
 			#main > section {
 				padding: 2em 0;
@@ -3070,7 +3037,7 @@ color: #e6e6e6;
 					padding: 0 1em;
 				}
 
-		/* Footer */
+		
 
 			#footer .copyright li {
 				display: block;

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Thank you neon sign</title>
+  <desc id="desc">White neon lettering that reads Thank you on a dark brick wall.</desc>
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="brick" x="0" y="0" width="120" height="70" patternUnits="userSpaceOnUse">
+      <rect width="120" height="70" fill="#0d0d0d" />
+      <rect y="68" width="120" height="2" fill="#141414" />
+      <rect x="118" width="2" height="70" fill="#141414" />
+    </pattern>
+  </defs>
+  <rect width="1000" height="1000" fill="#0a0a0a" />
+  <rect width="1000" height="1000" fill="url(#brick)" />
+  <g filter="url(#glow)" transform="translate(60, 120)">
+    <text x="50%" y="50%" text-anchor="middle" fill="#f5f5f5" font-family="'Pacifico', 'Segoe Script', 'Brush Script MT', cursive" font-size="150">Thank you!</text>
+  </g>
+</svg>

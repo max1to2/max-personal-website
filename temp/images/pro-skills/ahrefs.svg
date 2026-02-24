@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <rect width="120" height="120" rx="20" fill="#0d3b8a"/>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-weight="700" font-size="34" fill="#f48120" text-anchor="middle" dominant-baseline="middle">a</text>
+  <text x="50%" y="75%" font-family="Arial, sans-serif" font-weight="700" font-size="18" fill="#f48120" text-anchor="middle" dominant-baseline="middle">hrefs</text>
+</svg>
